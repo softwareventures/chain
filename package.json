@@ -27,7 +27,7 @@
     "ts-node": "8.6.0",
     "tslint": "5.20.1",
     "typescript": "3.7.4",
-    "semantic-release": "16.0.0"
+    "semantic-release": "16.0.1"
   },
   "config": {
     "commitizen": {
