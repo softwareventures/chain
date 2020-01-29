@@ -22,12 +22,12 @@
   "devDependencies": {
     "@softwareventures/tsconfig": "2.1.0",
     "@softwareventures/tslint-rules": "0.7.1",
-    "ava": "2.4.0",
+    "ava": "3.1.0",
     "cz-conventional-changelog": "3.1.0",
+    "semantic-release": "17.0.1",
     "ts-node": "8.6.2",
     "tslint": "5.20.1",
-    "typescript": "3.7.5",
-    "semantic-release": "17.0.1"
+    "typescript": "3.7.5"
   },
   "config": {
     "commitizen": {
@@ -35,8 +35,6 @@
     }
   },
   "ava": {
-    "babel": false,
-    "compileEnhancements": false,
     "extensions": [
       "ts"
     ],
