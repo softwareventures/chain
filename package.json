@@ -5,8 +5,8 @@
   "keywords": [
     "TypeScript",
     "chain",
-    "monad",
-    "identity"
+    "identity",
+    "monad"
   ],
   "author": "Daniel Cassidy <mail@danielcassidy.me.uk>",
   "homepage": "https://github.com/softwareventures/chain",
@@ -15,8 +15,8 @@
   "license": "ISC",
   "scripts": {
     "prepare": "tsc",
-    "test": "tslint --project . && ava",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "test": "tslint --project . && ava"
   },
   "sideEffects": false,
   "devDependencies": {
