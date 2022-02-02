@@ -1,7 +1,7 @@
 interface Chain<T> {
     readonly value: T;
-    map<U>(f: (x: T) => U): Chain<U>;
-    then<U>(f: (x: T) => Chain<U>): Chain<U>;
+    map: <U>(f: (x: T) => U) => Chain<U>;
+    then: <U>(f: (x: T) => Chain<U>) => Chain<U>;
 }
 
 function chain<T>(x: T): Chain<T> {
