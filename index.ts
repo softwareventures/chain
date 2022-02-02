@@ -1,13 +1,19 @@
-export interface Chain<T> {
+interface Chain<T> {
     readonly value: T;
     map<U>(f: (x: T) => U): Chain<U>;
     then<U>(f: (x: T) => Chain<U>): Chain<U>;
 }
 
-export default function chain<T>(x: T): Chain<T> {
+function chain<T>(x: T): Chain<T> {
     return {
         value: x,
         map: f => chain(f(x)),
         then: f => f(x)
     };
 }
+
+/** @deprecated For backwards compatibility with versions < v1.0.1.
+ * Will be removed in v2.0. */
+chain.default = chain;
+
+export = chain;

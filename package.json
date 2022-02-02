@@ -14,7 +14,7 @@
   "repository": "github:softwareventures/chain",
   "license": "ISC",
   "scripts": {
-    "prepare": "tsc",
+    "prepare": "tsc && node ./fix-types-for-back-compat.js",
     "semantic-release": "semantic-release",
     "test": "tslint --project . && ava"
   },
