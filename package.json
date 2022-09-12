@@ -34,7 +34,7 @@
     "@softwareventures/tslint-rules": "1.0.0",
     "ava": "4.2.0",
     "cz-conventional-changelog": "3.3.0",
-    "eslint": "8.23.0",
+    "eslint": "8.23.1",
     "husky": "7.0.4",
     "prettier": "2.7.1",
     "semantic-release": "17.4.7",
