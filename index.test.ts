@@ -1,5 +1,5 @@
 import test from "ava";
-import chain from "./index";
+import {chain} from "./index";
 
 test("value", t => t.is(chain("giraffe").value, "giraffe"));
 test("map", t => t.is(chain("guinness").map(s => s.replace(/u|ne|ss/gu, "")).value, "gin"));
