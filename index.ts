@@ -13,7 +13,7 @@ function chain<T>(x: T): Chain<T> {
 }
 
 /** @deprecated For backwards compatibility with versions < v1.0.1.
- * Will be removed in v2.0. */
+ * Will be removed in v3.0. */
 chain.default = chain;
 
 export = chain;
