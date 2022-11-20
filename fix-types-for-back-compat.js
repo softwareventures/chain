@@ -61,15 +61,6 @@ const fix = context => node => {
                 typescript.factory.createModuleBlock([node]),
                 typescript.NodeFlags.Namespace
             );
-        } else if (typescript.isFunctionDeclaration(node) && node.name.escapedText === "chain") {
-            console.log("found function decl");
-            return typescript.addSyntheticLeadingComment(
-                typescript.visitEachChild(node, visit, context),
-                typescript.SyntaxKind.MultiLineCommentTrivia,
-                '* @deprecated Use `import { chain } from "chain"` instead of `import chain = require("chain")`.\n' +
-                    " * Will be removed in v3.0. ",
-                true
-            );
         } else if (typescript.isModuleDeclaration(node) && node.name.escapedText === "chain") {
             return typescript.visitEachChild(node, visitInModuleDeclaration, context);
         } else {
