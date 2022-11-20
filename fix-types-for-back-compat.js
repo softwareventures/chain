@@ -66,7 +66,8 @@ const fix = context => node => {
             return typescript.addSyntheticLeadingComment(
                 typescript.visitEachChild(node, visit, context),
                 typescript.SyntaxKind.MultiLineCommentTrivia,
-                '* @deprecated Use `import { chain } from "chain"` instead of `import chain = require("chain")`.\n' +
+                '* @deprecated Use `import { chain } from "chain"` instead of\n' +
+                    ' * `import chain from "chain"` or `import chain = require("chain")`.\n' +
                     " * Will be removed in v3.0. ",
                 true
             );
