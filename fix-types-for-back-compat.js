@@ -62,7 +62,6 @@ const fix = context => node => {
                 typescript.NodeFlags.Namespace
             );
         } else if (typescript.isFunctionDeclaration(node) && node.name.escapedText === "chain") {
-            console.log("found function decl");
             return typescript.addSyntheticLeadingComment(
                 typescript.visitEachChild(node, visit, context),
                 typescript.SyntaxKind.MultiLineCommentTrivia,
