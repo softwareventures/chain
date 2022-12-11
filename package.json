@@ -17,7 +17,7 @@
     "pre-commit": "precise-commits",
     "fix": "tsc --noEmit && eslint --fix . && prettier --write .",
     "lint": "tsc --noEmit && eslint . && prettier --check .",
-    "prepare": "husky install && tsc && node ./fix-types-for-back-compat.js",
+    "prepare": "husky install && tsc",
     "semantic-release": "semantic-release",
     "test": "ava"
   },
